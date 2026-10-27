@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy – Cave Family Bot</title>
+<meta name="description" content="Privacy policy and terms of service for Cave Family Bot, a personal tool that uploads Cave Family episodes to its owner's YouTube channel.">
+<!-- GOOGLE-SITE-VERIFICATION -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap">
+<style>
+/* Layout: one readable column, a stone-toned header band, two policy sections with anchor links */
+:root {
+  --bg: #f6f2ec;
+  --surface: #ece5da;
+  --ink: #2a2320;
+  --muted: #6b5f57;
+  --accent: #b5541c;
+  --rule: #d8cfc2;
+  --display: "Bricolage Grotesque", "Segoe UI", system-ui, sans-serif;
+  --body: "Source Serif 4", Georgia, "Times New Roman", serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #1d1916; --surface: #28221e; --ink: #efe7dc; --muted: #b3a597; --accent: #f08a4b; --rule: #3d342e;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #1d1916; --surface: #28221e; --ink: #efe7dc; --muted: #b3a597; --accent: #f08a4b; --rule: #3d342e;
+  color-scheme: dark;
+}
+body { background: var(--bg); color: var(--ink); font-family: var(--body); font-size: 17px; line-height: 1.65; }
+.band { background: var(--surface); border-bottom: 1px solid var(--rule); }
+.wrap {
+  max-width: 44rem; margin: 0 auto;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+}
+header .wrap { padding-block: 2.5rem 2rem; display: grid; gap: .6rem; }
+.eyebrow { font-family: var(--display); font-weight: 600; font-size: .78rem; letter-spacing: .12em; text-transform: uppercase; color: var(--accent); }
+h1 { font-family: var(--display); font-weight: 800; font-size: clamp(2rem, 6vw, 2.8rem); line-height: 1.1; margin: 0; text-wrap: balance; }
+.lede { margin: 0; color: var(--muted); max-width: 38rem; }
+nav { display: flex; flex-wrap: wrap; gap: .5rem 1.25rem; font-family: var(--display); font-weight: 600; font-size: .95rem; }
+nav a { color: var(--accent); text-decoration: none; border-bottom: 2px solid transparent; }
+nav a:hover, nav a:focus-visible { border-bottom-color: var(--accent); outline: none; }
+main .wrap { padding-block: 1rem 3rem; }
+section { padding-block: 1.5rem; border-bottom: 1px solid var(--rule); }
+section:last-of-type { border-bottom: 0; }
+h2 { font-family: var(--display); font-weight: 800; font-size: 1.6rem; margin: .5rem 0 .25rem; text-wrap: balance; }
+h3 { font-family: var(--display); font-weight: 600; font-size: 1.05rem; margin: 1.4rem 0 .2rem; }
+p, li { max-width: 65ch; }
+ul { padding-left: 1.2rem; display: grid; gap: .3rem; }
+.meta { font-size: .9rem; color: var(--muted); margin: 0; }
+.contact { display: inline-flex; flex-wrap: wrap; gap: .5rem; align-items: center; background: var(--surface); border: 1px solid var(--rule); border-radius: 6px; padding: .4rem .6rem; }
+.contact code { font-family: ui-monospace, "SF Mono", Menlo, monospace; font-size: .95rem; user-select: all; }
+.contact button { font: 600 .85rem var(--display); color: var(--bg); background: var(--accent); border: 0; border-radius: 4px; padding: .3rem .6rem; cursor: pointer; }
+.contact button:focus-visible { outline: 2px solid var(--ink); outline-offset: 2px; }
+footer .wrap { padding-block: 1.5rem 2.5rem; font-size: .9rem; color: var(--muted); }
+</style>
+<style>body{margin:0} img{max-width:100%}</style>
+</head>
+<body>
+
+
+<header class="band">
+  <div class="wrap">
+    <span class="eyebrow">Cave Family · animated series</span>
+    <h1>Cave Family Bot Policies</h1>
+    <p class="lede">Cave Family Bot is a personal automation tool that renders daily episodes of the animated series Cave Family and uploads them to the owner's own YouTube channel.</p>
+    <nav aria-label="Sections">
+      <a href="/privacy.html">Privacy policy</a>
+      <a href="/terms.html">Terms of service</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+    <section id="privacy">
+      <h2>Privacy policy</h2>
+      <p class="meta">Effective 27 October 2026</p>
+
+      <h3>Who uses this app</h3>
+      <p>Cave Family Bot is used only by its owner to manage the owner's own YouTube channel. It is not offered to the public and does not have user accounts.</p>
+
+      <h3>What data the app accesses</h3>
+      <p>When the owner signs in with Google, the app requests the <strong>YouTube upload</strong> permission (<code>youtube.upload</code>). It uses this permission only to upload videos the bot has rendered, together with their title, description, tags and thumbnail, to the owner's channel.</p>
+      <ul>
+        <li>The app does not read, collect or store viewers' personal data, comments or watch history.</li>
+        <li>The app does not access Gmail, Google Drive, contacts or any other Google service.</li>
+        <li>The OAuth refresh token is stored encrypted as a secret in the owner's private GitHub repository and is used only by the owner's automated workflow.</li>
+      </ul>
+
+      <h3>Sharing</h3>
+      <p>Data obtained through Google APIs is never sold, shared with third parties or used for advertising. Cave Family Bot's use of information received from Google APIs adheres to the Google API Services User Data Policy, including the Limited Use requirements.</p>
+
+      <h3>Retention and removal</h3>
+      <p>The app keeps no Google user data beyond the stored token. The owner can revoke access at any time in the Google Account settings under Security, Third-party apps with account access, which immediately stops all uploads.</p>
+
+      <h3>Contact</h3>
+      <div class="contact">
+        <code id="email">above1visuals@gmail.com</code>
+        <button type="button" id="copy">Copy</button>
+      </div>
+    </section>
+
+    <section id="terms">
+      <h2>Terms of service</h2>
+      <p class="meta">Effective 27 October 2026</p>
+      <p>Cave Family Bot is a private tool operated by the owner of the Cave Family channel for their own use. By using it you agree to these terms.</p>
+      <h3>Use</h3>
+      <p>The app may only be used to upload Cave Family episodes to channels owned by its operator, in line with the YouTube Terms of Service and YouTube Community Guidelines.</p>
+      <h3>Content</h3>
+      <p>All episodes, characters and artwork belong to the channel owner. Music and sound effects are generated by the bot or come from CC0 (public domain) libraries.</p>
+      <h3>No warranty</h3>
+      <p>The app is provided as is, without warranty of any kind. The operator may change or stop the app at any time.</p>
+      <h3>Changes</h3>
+      <p>These terms and the privacy policy may be updated; the effective date above shows the latest version.</p>
+    </section>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">Cave Family · a new episode every day</div>
+</footer>
+
+<script>
+  document.getElementById('copy').addEventListener('click', function () {
+    var btn = this, text = document.getElementById('email').textContent;
+    function done() { btn.textContent = 'Copied'; setTimeout(function () { btn.textContent = 'Copy'; }, 1500); }
+    try {
+      navigator.clipboard.writeText(text).then(done, function () { selectText(); });
+    } catch (e) { selectText(); }
+    function selectText() {
+      var r = document.createRange(); r.selectNodeContents(document.getElementById('email'));
+      var s = window.getSelection(); s.removeAllRanges(); s.addRange(r);
+    }
+  });
+</script>
+
+<script>document.getElementById("privacy").scrollIntoView();</script>
+</body>
+</html>
